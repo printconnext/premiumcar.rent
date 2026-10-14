@@ -296,11 +296,25 @@ button, input, select, textarea {
   height: 80px;
 }
 
+.site-header .nav-container {
+  max-width: 1400px;
+  gap: 24px;
+}
+
 .brand-logo {
   display: flex;
   align-items: center;
   text-decoration: none;
   line-height: 1;
+  flex-shrink: 0;
+  margin-right: clamp(32px, 4vw, 64px);
+}
+
+.site-header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 .brand-logo-img {
@@ -1572,7 +1586,7 @@ button, input, select, textarea {
   }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1200px) {
   .nav-links {
     display: none;
   }

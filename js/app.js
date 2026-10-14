@@ -25,12 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
 const i18n = {
   th: {
     navFleet: "รุ่นรถ VIP",
-    navPricing: "ตารางราคา & โปรโมชั่น",
-    navChauffeur: "มาตรฐานคนขับ 10 ขั้น",
-    navCorporate: "เช่ารายเดือนนิติบุคคล",
+    navPricing: "ตารางราคา",
+    navChauffeur: "มาตรฐานคนขับ",
+    navCorporate: "สัญญานิติบุคคล",
     navCalculator: "คำนวณราคา",
     navFaq: "คำถามพบบ่อย",
-    navContact: "ติดต่อจองรถ",
+    navContact: "ติดต่อจอง",
     heroBadge1: "รถใหม่ไมล์น้อย ปี 2024-2026",
     heroBadge2: "คนขับผ่านการคัดกรอง 10 ขั้นตอน",
     heroBadge3: "หักภาษีนิติบุคคลได้ 36,000 บ./ด.",
