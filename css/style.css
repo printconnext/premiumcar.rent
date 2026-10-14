@@ -5,11 +5,15 @@
    ========================================================================== */
 
 :root {
-  --bg-dark: #0a0c10;
-  --bg-card: #12151c;
-  --bg-card-hover: #181d27;
-  --bg-surface: #1e2430;
-  --bg-glass: rgba(18, 21, 28, 0.85);
+  --bg-dark: #0a0e24;
+  --bg-card: #0f183d;
+  --bg-card-hover: #162254;
+  --bg-surface: #131e48;
+  --bg-surface-elevated: #273788;
+  --bg-glass: rgba(15, 24, 61, 0.88);
+  
+  --navy-accent: #273788;
+  --navy-glow: 0 0 25px rgba(39, 55, 136, 0.45);
   
   --gold-primary: #d4af37;
   --gold-light: #f5df88;
@@ -64,7 +68,7 @@ body {
   min-height: 100vh;
   line-height: 1.6;
   overflow-x: hidden;
-  background: radial-gradient(circle at 50% 0%, #151a24 0%, #0a0c10 70%);
+  background: radial-gradient(circle at 50% 0%, #1c2760 0%, #0a0e24 70%);
 }
 
 img {
@@ -178,7 +182,7 @@ button, input, select, textarea {
 
 .btn-gold {
   background: var(--gold-gradient);
-  color: #0b0c10;
+  color: #0a0e24;
   box-shadow: 0 4px 18px rgba(212, 175, 55, 0.35);
   position: relative;
   overflow: hidden;
@@ -224,7 +228,7 @@ button, input, select, textarea {
 
 .btn-phone {
   background: #ffffff;
-  color: #0a0c10;
+  color: #0a0e24;
   white-space: nowrap !important;
   word-break: keep-all !important;
   overflow-wrap: normal !important;
@@ -239,7 +243,7 @@ button, input, select, textarea {
 
 .btn-phone:hover {
   background: #f1f5f9;
-  color: #000000;
+  color: #0a0e24;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.25);
 }
@@ -276,7 +280,7 @@ button, input, select, textarea {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(10, 12, 16, 0.88);
+  background: rgba(9, 14, 36, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -284,7 +288,7 @@ button, input, select, textarea {
 }
 
 .site-header.scrolled {
-  background: rgba(8, 10, 14, 0.96);
+  background: rgba(7, 11, 28, 0.96);
   border-bottom-color: var(--gold-border);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
@@ -360,7 +364,7 @@ button, input, select, textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0a0c10;
+  color: #0a0e24;
   font-weight: 800;
   font-size: 1.3rem;
   box-shadow: 0 2px 10px rgba(212, 175, 55, 0.4);
@@ -464,7 +468,7 @@ button, input, select, textarea {
 
 .lang-btn.active {
   background: var(--gold-gradient);
-  color: #0b0c10;
+  color: #0a0e24;
 }
 
 .mobile-menu-btn {
@@ -507,9 +511,9 @@ button, input, select, textarea {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(10, 12, 16, 0.85) 0%,
-    rgba(10, 12, 16, 0.4) 40%,
-    rgba(10, 12, 16, 0.92) 85%,
+    rgba(9, 14, 36, 0.85) 0%,
+    rgba(9, 14, 36, 0.4) 40%,
+    rgba(9, 14, 36, 0.92) 85%,
     var(--bg-dark) 100%
   );
 }
@@ -566,7 +570,7 @@ button, input, select, textarea {
 
 /* Quick Search / Booking Strip in Hero */
 .hero-booking-bar {
-  background: rgba(18, 21, 28, 0.92);
+  background: rgba(15, 24, 61, 0.92);
   border: 1px solid var(--gold-border);
   border-radius: var(--radius-lg);
   padding: 24px;
@@ -723,7 +727,7 @@ button, input, select, textarea {
   position: absolute;
   top: 18px;
   left: 18px;
-  background: rgba(10, 12, 16, 0.85);
+  background: rgba(9, 14, 36, 0.85);
   border: 1px solid var(--gold-border);
   color: var(--gold-light);
   font-size: 0.75rem;
@@ -803,7 +807,7 @@ button, input, select, textarea {
    ========================================================================== */
 .pricing-section {
   padding: 80px 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(18, 21, 28, 0.6) 50%, transparent 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(15, 24, 61, 0.6) 50%, transparent 100%);
 }
 
 .pricing-table-container {
@@ -1040,7 +1044,7 @@ button, input, select, textarea {
   bottom: 24px;
   left: 24px;
   right: 24px;
-  background: rgba(18, 21, 28, 0.9);
+  background: rgba(15, 24, 61, 0.92);
   backdrop-filter: blur(12px);
   border: 1px solid var(--gold-border);
   border-radius: var(--radius-md);
@@ -1103,7 +1107,7 @@ button, input, select, textarea {
    ========================================================================== */
 .corporate-section {
   padding: 80px 0;
-  background: radial-gradient(circle at 50% 50%, rgba(26, 32, 44, 0.5) 0%, transparent 80%);
+  background: radial-gradient(circle at 50% 50%, rgba(39, 55, 136, 0.25) 0%, transparent 80%);
 }
 
 .b2b-grid {
@@ -1378,7 +1382,7 @@ button, input, select, textarea {
    Footer
    ========================================================================== */
 .site-footer {
-  background: #060709;
+  background: #070b1e;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 70px 0 30px;
   margin-top: 40px;
@@ -1525,7 +1529,7 @@ button, input, select, textarea {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(10, 12, 16, 0.95);
+  background: rgba(9, 14, 36, 0.96);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-top: 1px solid var(--gold-border);
@@ -1597,7 +1601,7 @@ button, input, select, textarea {
     top: 80px;
     left: 0;
     width: 100%;
-    background: rgba(10, 12, 16, 0.98);
+    background: rgba(9, 14, 36, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--gold-border);
