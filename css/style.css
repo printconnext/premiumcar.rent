@@ -505,12 +505,15 @@ button, input, select, textarea {
   z-index: 0;
 }
 
-.hero-bg-wrapper img {
+.hero-bg-wrapper img,
+.hero-bg-wrapper video,
+.hero-bg-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center 38%;
-  filter: brightness(0.65) contrast(1.1);
+  filter: brightness(0.68) contrast(1.08);
+  pointer-events: none;
 }
 
 .hero-bg-overlay {
