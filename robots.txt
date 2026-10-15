@@ -12,6 +12,9 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
@@ -24,7 +27,13 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: GoogleOther
+Allow: /
+
 User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
 Allow: /
 
 User-agent: CCBot
@@ -33,5 +42,7 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-# Sitemap Location
+# Host, LLM Documentation & Sitemap Location
+Host: https://premiumcar.rent
 Sitemap: https://premiumcar.rent/sitemap.xml
+

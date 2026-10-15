@@ -1683,3 +1683,172 @@ button, input, select, textarea {
   }
 }
 
+/* ==========================================================================
+   Breadcrumb & Trust Metadata Bar
+   ========================================================================== */
+.breadcrumb-trust-section {
+  padding: 16px 0 0 0;
+  background: transparent;
+}
+.breadcrumb-trust-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--blue-border);
+}
+.breadcrumb-nav {
+  font-size: 0.85rem;
+}
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumb-item a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.breadcrumb-item a:hover {
+  color: var(--gold-light);
+}
+.breadcrumb-item.active {
+  color: var(--gold-primary);
+  font-weight: 500;
+}
+.breadcrumb-separator {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.freshness-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  background: rgba(30, 44, 110, 0.6);
+  border: 1px solid var(--blue-border);
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+}
+.freshness-dot {
+  width: 7px;
+  height: 7px;
+  background-color: var(--success);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--success);
+  display: inline-block;
+}
+
+/* ==========================================================================
+   AI Executive Summary / Key Takeaways Box (AEO & GEO)
+   ========================================================================== */
+.ai-summary-section {
+  padding: 24px 0 8px 0;
+}
+.ai-summary-card {
+  background: linear-gradient(135deg, rgba(28, 40, 102, 0.95) 0%, rgba(18, 26, 66, 0.95) 100%);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  box-shadow: var(--card-glow), 0 0 20px rgba(212, 175, 55, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+.ai-summary-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--gold-gradient);
+}
+.ai-summary-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.ai-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(212, 175, 55, 0.18);
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-light);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.ai-summary-title {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin: 0;
+  font-weight: 600;
+}
+.ai-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 24px;
+}
+.ai-summary-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.ai-item-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.ai-summary-item strong {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--gold-light);
+  margin-bottom: 3px;
+}
+.ai-summary-item p {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Accessibility screen-reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media (max-width: 768px) {
+  .ai-summary-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .breadcrumb-trust-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+

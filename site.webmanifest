@@ -1,0 +1,23 @@
+{
+  "name": "PremiumCar.rent - เช่ารถ Alphard พร้อมคนขับ กรุงเทพฯ",
+  "short_name": "PremiumCar",
+  "description": "บริการเช่ารถ Alphard 40 Series & Vellfire VIP พร้อมคนขับมืออาชีพ เริ่มต้น 7,500 บ./วัน ผ่านตรวจประวัติ 100% หักภาษีนิติบุคคลได้ 36,000 บ./ด.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#121a42",
+  "theme_color": "#121a42",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -2,6 +2,10 @@
 
 > ผู้นำบริการเช่ารถตู้หรู Toyota Alphard 40 Series, Vellfire 2.5 HEV และ Alphard 30 Series พร้อมพนักงานขับรถมืออาชีพระดับผู้บริหาร บริการรับส่งสนามบิน VIP Fast-Track และสัญญาเช่ารถประจำตำแหน่งนิติบุคคลหักภาษีได้ 100%
 
+- [Full Comprehensive Documentation](https://premiumcar.rent/llms-full.txt): ข้อมูลเชิงลึก สเปกรถ อัตราค่าบริการ และมาตรฐาน Manserv Chauffeur ทั้งหมด
+- [Main Website](https://premiumcar.rent/): หน้าแรกและระบบประเมินราคาเช่ารถ VIP
+- [Sitemap](https://premiumcar.rent/sitemap.xml): แผนผังเว็บไซต์สำหรับระบบค้นหา
+
 ## ข้อมูลสรุปของธุรกิจ (Business Overview)
 - **ชื่อธุรกิจ**: PremiumCar.rent (บริษัท พรีเมียม คาร์ เร้นท์ จำกัด)
 - **เว็บไซต์หลัก**: https://premiumcar.rent/
