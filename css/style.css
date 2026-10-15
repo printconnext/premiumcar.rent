@@ -5,27 +5,33 @@
    ========================================================================== */
 
 :root {
-  --bg-dark: #0a0e24;
-  --bg-card: #0f183d;
-  --bg-card-hover: #162254;
-  --bg-surface: #131e48;
+  --bg-dark: #121a42;
+  --bg-card: #1c2866;
+  --bg-card-hover: #243482;
+  --bg-surface: #1e2c6e;
   --bg-surface-elevated: #273788;
-  --bg-glass: rgba(15, 24, 61, 0.88);
+  --bg-glass: rgba(28, 40, 102, 0.90);
   
   --navy-accent: #273788;
-  --navy-glow: 0 0 25px rgba(39, 55, 136, 0.45);
+  --navy-light: #3d52c2;
+  --navy-glow: 0 0 25px rgba(39, 55, 136, 0.55);
+  
+  --blue-border: rgba(75, 105, 230, 0.38);
+  --blue-border-hover: rgba(110, 145, 255, 0.65);
+  --card-glow: 0 10px 30px rgba(10, 14, 40, 0.4), 0 0 25px rgba(39, 55, 136, 0.35);
+  --card-glow-hover: 0 16px 45px rgba(10, 14, 40, 0.5), 0 0 35px rgba(39, 55, 136, 0.6);
   
   --gold-primary: #d4af37;
   --gold-light: #f5df88;
   --gold-dark: #a67c1e;
   --gold-gradient: linear-gradient(135deg, #d4af37 0%, #fae596 50%, #b8860b 100%);
   --gold-gradient-subtle: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.03) 100%);
-  --gold-border: rgba(212, 175, 55, 0.28);
+  --gold-border: rgba(212, 175, 55, 0.35);
   --gold-glow: 0 0 25px rgba(212, 175, 55, 0.35);
 
   --text-primary: #ffffff;
-  --text-secondary: #c5cdd9;
-  --text-muted: #8490a2;
+  --text-secondary: #c9d2e3;
+  --text-muted: #8b99b5;
   --text-gold: #d4af37;
 
   --line-green: #06c755;
@@ -39,9 +45,9 @@
   --radius-lg: 20px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.6);
-  --shadow-lg: 0 16px 50px rgba(0, 0, 0, 0.8);
+  --shadow-sm: 0 4px 12px rgba(10, 14, 40, 0.35);
+  --shadow-md: 0 8px 30px rgba(10, 14, 40, 0.5);
+  --shadow-lg: 0 16px 50px rgba(10, 14, 40, 0.7);
 
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
@@ -68,7 +74,8 @@ body {
   min-height: 100vh;
   line-height: 1.6;
   overflow-x: hidden;
-  background: radial-gradient(circle at 50% 0%, #1c2760 0%, #0a0e24 70%);
+  background: radial-gradient(circle at 50% 0%, #273788 0%, #17235a 45%, #10183e 100%);
+  background-attachment: fixed;
 }
 
 img {
@@ -151,18 +158,18 @@ button, input, select, textarea {
 
 /* Glassmorphism Cards */
 .glass-card {
-  background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: linear-gradient(145deg, #1f2d72 0%, #162158 100%);
+  border: 1px solid var(--blue-border);
   border-radius: var(--radius-lg);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: var(--card-glow);
   transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
 }
 
 .glass-card:hover {
   border-color: var(--gold-border);
-  box-shadow: var(--shadow-lg), 0 0 20px rgba(212, 175, 55, 0.12);
+  box-shadow: var(--card-glow-hover), 0 0 25px rgba(212, 175, 55, 0.2);
 }
 
 /* Buttons */
@@ -280,17 +287,17 @@ button, input, select, textarea {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(9, 14, 36, 0.88);
+  background: rgba(18, 26, 68, 0.90);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid var(--blue-border);
   transition: all var(--transition-normal);
 }
 
 .site-header.scrolled {
-  background: rgba(7, 11, 28, 0.96);
+  background: rgba(15, 22, 58, 0.98);
   border-bottom-color: var(--gold-border);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 25px rgba(10, 14, 40, 0.5), 0 0 20px rgba(39, 55, 136, 0.35);
 }
 
 .nav-container {
@@ -511,9 +518,9 @@ button, input, select, textarea {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(9, 14, 36, 0.85) 0%,
-    rgba(9, 14, 36, 0.4) 40%,
-    rgba(9, 14, 36, 0.92) 85%,
+    rgba(18, 26, 66, 0.75) 0%,
+    rgba(24, 34, 88, 0.35) 40%,
+    rgba(18, 26, 66, 0.88) 85%,
     var(--bg-dark) 100%
   );
 }
@@ -570,11 +577,11 @@ button, input, select, textarea {
 
 /* Quick Search / Booking Strip in Hero */
 .hero-booking-bar {
-  background: rgba(15, 24, 61, 0.92);
-  border: 1px solid var(--gold-border);
+  background: linear-gradient(145deg, rgba(32, 46, 118, 0.95) 0%, rgba(23, 34, 88, 0.95) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.45);
   border-radius: var(--radius-lg);
   padding: 24px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 12px 40px rgba(10, 14, 40, 0.45), 0 0 35px rgba(39, 55, 136, 0.45);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   margin-top: 10px;
@@ -628,11 +635,11 @@ button, input, select, textarea {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(145deg, #1f2d72 0%, #162158 100%);
+  border: 1px solid var(--blue-border);
   border-radius: var(--radius-lg);
   padding: 30px;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--card-glow);
 }
 
 .stat-item {
@@ -680,21 +687,23 @@ button, input, select, textarea {
 }
 
 .fleet-tab-btn {
-  background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(145deg, #1c2866 0%, #151f4e 100%);
+  border: 1px solid var(--blue-border);
   color: var(--text-secondary);
   padding: 12px 24px;
   border-radius: var(--radius-md);
   font-weight: 600;
   cursor: pointer;
   transition: all var(--transition-fast);
+  box-shadow: 0 4px 15px rgba(10, 14, 40, 0.25);
 }
 
 .fleet-tab-btn:hover,
 .fleet-tab-btn.active {
-  background: var(--gold-gradient-subtle);
+  background: linear-gradient(135deg, rgba(39, 55, 136, 0.9) 0%, rgba(212, 175, 55, 0.22) 100%);
   border-color: var(--gold-primary);
   color: var(--gold-light);
+  box-shadow: 0 6px 20px rgba(39, 55, 136, 0.45), 0 0 15px rgba(212, 175, 55, 0.25);
 }
 
 .fleet-card {
@@ -813,9 +822,9 @@ button, input, select, textarea {
 .pricing-table-container {
   overflow-x: auto;
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: var(--bg-card);
-  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--blue-border);
+  background: linear-gradient(145deg, #1f2d72 0%, #162158 100%);
+  box-shadow: var(--card-glow);
 }
 
 .pricing-table {
@@ -1058,20 +1067,22 @@ button, input, select, textarea {
 }
 
 .vetting-step-card {
-  background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: linear-gradient(145deg, #1c2866 0%, #141c48 100%);
+  border: 1px solid var(--blue-border);
   border-radius: var(--radius-md);
   padding: 18px;
   display: flex;
   align-items: flex-start;
   gap: 14px;
   transition: all var(--transition-fast);
+  box-shadow: 0 4px 15px rgba(10, 14, 40, 0.25);
 }
 
 .vetting-step-card:hover {
   border-color: var(--gold-border);
-  background: var(--bg-card-hover);
+  background: linear-gradient(145deg, #243482 0%, #1a2562 100%);
   transform: translateY(-2px);
+  box-shadow: var(--card-glow);
 }
 
 .vetting-step-num {
@@ -1174,17 +1185,18 @@ button, input, select, textarea {
 }
 
 .dest-card {
-  background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(145deg, #1e2c72 0%, #152054 100%);
+  border: 1px solid var(--blue-border);
   border-radius: var(--radius-md);
   padding: 24px;
   transition: all var(--transition-fast);
+  box-shadow: 0 6px 20px rgba(10, 14, 40, 0.3), 0 0 15px rgba(39, 55, 136, 0.2);
 }
 
 .dest-card:hover {
   border-color: var(--gold-border);
   transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--card-glow-hover);
 }
 
 .dest-header {
@@ -1246,15 +1258,17 @@ button, input, select, textarea {
 }
 
 .faq-item {
-  background: var(--bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(145deg, #1e2c72 0%, #152054 100%);
+  border: 1px solid var(--blue-border);
   border-radius: var(--radius-md);
   overflow: hidden;
-  transition: border-color var(--transition-fast);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: 0 4px 15px rgba(10, 14, 40, 0.25);
 }
 
 .faq-item.active {
   border-color: var(--gold-border);
+  box-shadow: 0 6px 25px rgba(39, 55, 136, 0.35);
 }
 
 .faq-question {
@@ -1382,10 +1396,11 @@ button, input, select, textarea {
    Footer
    ========================================================================== */
 .site-footer {
-  background: #070b1e;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, #182358 0%, #0e1538 100%);
+  border-top: 1px solid var(--blue-border);
   padding: 70px 0 30px;
   margin-top: 40px;
+  box-shadow: 0 -10px 30px rgba(10, 14, 40, 0.35);
 }
 
 .footer-grid {
