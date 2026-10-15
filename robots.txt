@@ -42,7 +42,6 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-# Host, LLM Documentation & Sitemap Location
-Host: https://premiumcar.rent
+# LLM Documentation & Sitemap Location
 Sitemap: https://premiumcar.rent/sitemap.xml
 

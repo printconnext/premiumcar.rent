@@ -9,18 +9,17 @@
     <priority>1.0</priority>
     
     <!-- Multilingual Alternate Links -->
-    <xhtml:link rel="alternate" hreflang="th" href="https://premiumcar.rent/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://premiumcar.rent/#en" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://premiumcar.rent/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://premiumcar.rent/" />
 
     <!-- Google Image Sitemap Extension -->
     <image:image>
-      <image:loc>https://premiumcar.rent/assets/images/hero-alphard.jpg</image:loc>
+      <image:loc>https://premiumcar.rent/assets/images/hero-alphard.webp</image:loc>
       <image:title>All-New Toyota Alphard 40 Series VIP Rental with Chauffeur Bangkok</image:title>
       <image:caption>บริการเช่ารถตู้ Toyota Alphard 40 Series VIP พร้อมคนขับมืออาชีพ กรุงเทพฯ</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://premiumcar.rent/assets/images/fleet-vellfire.jpg</image:loc>
+      <image:loc>https://premiumcar.rent/assets/images/fleet-vellfire.webp</image:loc>
       <image:title>Toyota Vellfire 2.5 HEV Sport VIP Rental</image:title>
       <image:caption>บริการเช่า Toyota Vellfire 2.5 HEV Sport VIP รับส่งสนามบินและท่องเที่ยว</image:caption>
     </image:image>
@@ -30,9 +29,21 @@
       <image:caption>มาตรฐานคนขับรถผู้บริหาร ผ่านการตรวจประวัติอาชญากรรม 100%</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://premiumcar.rent/assets/images/alphard-interior.jpg</image:loc>
+      <image:loc>https://premiumcar.rent/assets/images/alphard-interior.webp</image:loc>
       <image:title>Toyota Alphard Executive Lounge VIP Cabin Interior</image:title>
       <image:caption>ภายในห้องโดยสาร Toyota Alphard เบาะ Executive Lounge VIP ปรับไฟฟ้านวดหลัง</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://premiumcar.rent/privacy.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://premiumcar.rent/terms.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
